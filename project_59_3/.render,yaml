@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: project_59-3        # You can name the service whatever you prefer
+    env: python               # Specifies the environment as Python
+    buildCommand: "pip install -r requirements.txt"  # Command to install dependencies
+    startCommand: "gunicorn project_59_3.wsgi"       # Command to start your Django app
